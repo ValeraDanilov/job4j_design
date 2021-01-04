@@ -1,0 +1,5 @@
+User: а
+Bot: a
+User: п
+Bot: e
+User: закончить
