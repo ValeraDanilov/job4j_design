@@ -1,7 +1,6 @@
 package ru.job4j.serialization;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import org.json.JSONObject;
 
 import java.util.Arrays;
 
@@ -21,6 +20,26 @@ public class Cat {
         this.number = number;
     }
 
+    public boolean isSex() {
+        return sex;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String[] getVisit() {
+        return visit;
+    }
+
+    public SerialNumber getNumber() {
+        return number;
+    }
+
     @Override
     public String toString() {
         return "Cat{" +
@@ -36,19 +55,15 @@ public class Cat {
 
         final Cat cat = new Cat(false, 3, "Мурзик", new String[]{"18.07.20"}, new SerialNumber("1055381"));
 
-        final Gson gson = new GsonBuilder().create();
-        System.out.println(gson.toJson(cat));
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("sex", cat.isSex());
+        jsonObject.put("age", cat.getAge());
+        jsonObject.put("name", cat.getName());
+        jsonObject.put("visit", cat.getVisit());
+        jsonObject.put("number", cat.getNumber().getNumber());
 
-        String result = "{"
-                + "\"sex\":false,"
-                + "\"age\":3,"
-                + "\"name\":Мурзик,"
-                + "\"visit\":"
-                + "[\"18.07.20\"]," +
-                "\"number\":"
-               + "{\"number\":\"1055381\"}" +
-                "}";
-        final Cat catResult = gson.fromJson(result, Cat.class);
-        System.out.println(catResult);
+        System.out.println(jsonObject.toString());
+
+        System.out.println(new JSONObject(cat).toString());
     }
 }
