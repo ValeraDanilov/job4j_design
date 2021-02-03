@@ -1,0 +1,7 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<person sex="false" age="3" name="Мурзик">
+    <visits>
+        <visit visit="18.07.20"/>
+    </visits>
+    <number number="1055381"/>
+</person>

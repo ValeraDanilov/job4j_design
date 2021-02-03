@@ -1,7 +1,5 @@
 package ru.job4j.serialization;
-
 import org.json.JSONObject;
-
 import java.util.Arrays;
 
 public class Cat {
@@ -62,7 +60,7 @@ public class Cat {
         jsonObject.put("visit", cat.getVisit());
         jsonObject.put("number", cat.getNumber().getNumber());
 
-        System.out.println(jsonObject.toString());
+       System.out.println(jsonObject.toString());
 
         System.out.println(new JSONObject(cat).toString());
     }
