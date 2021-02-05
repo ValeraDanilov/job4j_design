@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Cat {
 
-    private final boolean sex;
-    private final int age;
-    private final String name;
-    private final String[] visit;
-    private final SerialNumber number;
+    private boolean sex;
+    private int age;
+    private String name;
+    private String[] visit;
+    private SerialNumber number;
 
     public Cat(boolean sex, int age, String name, String[] visit, SerialNumber number) {
         this.sex = sex;
@@ -45,8 +45,7 @@ public class Cat {
                 ", age=" + age +
                 ", name='" + name + '\'' +
                 ", visit=" + Arrays.toString(visit) +
-                ", number=" + number +
-                '}';
+                ", number=" + number + '}';
     }
 
     public static void main(String[] args) {
