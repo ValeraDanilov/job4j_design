@@ -12,26 +12,25 @@
     <module>chapter_001</module>
     <module>chapter_002</module>
     <module>chapter_003</module>
-    <module>chapter_005</module>
     <module>chapter_004</module>
+    <module>chapter_005</module>
   </modules>
 
   <name>job4j_design</name>
   <description>A simple job4j_design.</description>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>14</maven.compiler.source>
-    <maven.compiler.target>14</maven.compiler.target>
+    <maven.compiler.source>16</maven.compiler.source>
+    <maven.compiler.target>16</maven.compiler.target>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.2.19</version>
+      <version>42.2.12</version>
     </dependency>
 
     <dependency>
@@ -115,7 +114,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.5</version>
+        <version>0.8.6</version>
         <executions>
           <execution>
             <goals>
@@ -132,6 +131,5 @@
         </executions>
       </plugin>
     </plugins>
-
   </build>
 </project>
