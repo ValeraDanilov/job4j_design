@@ -1,13 +1,10 @@
 package ru.job4j.lsp;
 
-public class PassengerCar extends Car implements DimensionCar {
+public class PassengerCar extends Car {
 
-    public PassengerCar(String brand, int dimension) {
-        super(brand, dimension);
-    }
+    private final static int LIGHT_CAR_SIZE = 1;
 
-    @Override
-    public boolean checkDimensionCar(int dimension) {
-        return false;
+    public PassengerCar(String brand) {
+        super(brand, LIGHT_CAR_SIZE);
     }
 }
