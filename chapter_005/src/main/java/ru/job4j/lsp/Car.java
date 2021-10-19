@@ -25,4 +25,12 @@ public abstract class Car {
     public void setDimension(int dimension) {
         this.dimension = dimension;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", dimension=" + dimension +
+                '}';
+    }
 }
