@@ -18,7 +18,6 @@
 
   <name>job4j_design</name>
   <description>A simple job4j_design.</description>
-  <!-- FIXME change it to the project's website -->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
